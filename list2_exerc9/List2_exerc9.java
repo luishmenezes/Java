@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class List2_exerc9 {
 
     public static void main(String[] args) {
-        int quantidadeValores = 10;
+        int quantidadeValores = 50;
         int contador = 1;
         int menorValor = Integer.MAX_VALUE;
         int maiorValor = Integer.MIN_VALUE;
