@@ -8,23 +8,26 @@ import java.util.Scanner;
 
 /**
  *
- * @author aluno
+ * @author Luis Henrique
  */
-public class List2_exerc11 {
+public class List2_Exerc11 {
 
     public static void main(String[] args) {
-        int numero,i, total;
+        int numero,i,resultado;
         Scanner ler = new Scanner(System.in);
         
-        System.out.println("Digite um número para ver a sua tabuada: ");
+        System.out.println("Digite o valor da tabuada desejada: ");
         numero = ler.nextInt();
         
-        System.out.println("O número escolhido foi " + numero );
+        if(numero > 0 && numero <= 10){
+            System.out.println("Tabuada de " + numero);
         
-        for(i = 1; i <= 10 ; i++){
-            total = numero*i;
-            System.out.println("e sua tabuada é " + numero + " x " + i + " = " + total);
+        for(i = 1; i <= 10; i++){
+            resultado = numero * i;
+            System.out.println(numero + " x " + i + " = " + resultado);
         }
-     
+        } else {
+            System.out.println("Número não está entre 1 e 10.");
+        }
     }
 }
