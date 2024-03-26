@@ -12,11 +12,10 @@ public class App {
             elementos[i] = ler.nextInt();
         }
 
-        int j = 0;
-        
+                
         for( int i = 9;i >= 0; i-- ){
-            elementosInverso[i] = elementos[j];
-            j++;
+            elementosInverso[i] = elementos[elementos.length - i -1];
+            
         }
 
         for( int i = 0; i < 10; i++){
