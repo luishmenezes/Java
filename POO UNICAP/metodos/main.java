@@ -11,5 +11,7 @@ public class main{
         c1.acelerar();
         c1.acelerar();
         c1.frear();
+        c1.frear();
+        
     }
 }

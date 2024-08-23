@@ -34,15 +34,20 @@ public class Carro{
     }
     
     void acelerar(){
-        this.velocidade = velocidade +20;
+        this.velocidade +=20;
         
         System.out.println("A velocidade atual é: " + velocidade);
         
     }
 
     void frear(){
-        this.velocidade = velocidade -20;
+        if(this.velocidade < 30){
+            velocidade = 0;
+        } else {
+            this.velocidade -= 30;
+        };
         System.out.println("A velocidade atual é: " + velocidade);
+        }
+        
     }
 
-}
